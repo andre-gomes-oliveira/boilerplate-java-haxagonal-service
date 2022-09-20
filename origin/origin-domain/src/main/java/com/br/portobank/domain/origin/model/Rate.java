@@ -1,4 +1,4 @@
-package com.br.portobank.domain.movies.model;
+package com.br.portobank.domain.origin.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import lombok.Value;

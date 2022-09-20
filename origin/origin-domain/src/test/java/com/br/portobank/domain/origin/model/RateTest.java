@@ -1,4 +1,4 @@
-package com.br.portobank.domain.movies.model;
+package com.br.portobank.domain.origin.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;

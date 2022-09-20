@@ -1,13 +1,13 @@
 package com.br.portobank.infra.api.mapper;
 
 import com.br.portobank.common.utils.DateTimeUtil;
-import com.br.portobank.domain.movies.model.Movie;
-import com.br.portobank.domain.movies.model.Rate;
+import com.br.portobank.domain.origin.model.Movie;
+import com.br.portobank.domain.origin.model.Rate;
 import info.movito.themoviedbapi.model.MovieDb;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class MovieMapper {
+public class OriginMapper {
 
     public static Movie toDomain(final MovieDb movieDb) {
         if (movieDb == null) {

@@ -1,4 +1,4 @@
-package com.br.portobank.domain.movies.model;
+package com.br.portobank.domain.origin.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

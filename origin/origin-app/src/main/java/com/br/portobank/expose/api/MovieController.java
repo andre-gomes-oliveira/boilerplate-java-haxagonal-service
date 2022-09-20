@@ -1,7 +1,7 @@
 package com.br.portobank.expose.api;
 
-import com.br.portobank.domain.movies.model.Movie;
-import com.br.portobank.domain.movies.service.MoviesService;
+import com.br.portobank.domain.origin.model.Movie;
+import com.br.portobank.domain.origin.service.OriginService;
 import com.br.portobank.error.ParametersException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -18,18 +18,18 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MovieController {
 
-    private final MoviesService moviesService;
+    private final OriginService originService;
 
     @GetMapping("/populars")
     public ResponseEntity<List<Movie>> getPopulars() {
-        final List<Movie> movies = moviesService.getPopulars();
+        final List<Movie> movies = originService.getPopulars();
         return ResponseEntity
                 .ok(movies);
     }
 
     @GetMapping("/upcoming")
     public ResponseEntity<List<Movie>> getUpcoming() {
-        final List<Movie> movies = moviesService.getUpcoming();
+        final List<Movie> movies = originService.getUpcoming();
         return ResponseEntity
                 .ok(movies);
     }
@@ -39,7 +39,7 @@ public class MovieController {
         if (!StringUtils.hasText(id)) {
             throw new ParametersException("[id] parameter is mandatory");
         }
-        final Movie movie = moviesService.getById(id);
+        final Movie movie = originService.getById(id);
         return ResponseEntity
                 .ok(movie);
     }

@@ -7,5 +7,5 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties({
         AppProperties.class
 })
-public class MoviesInfraApiConfiguration {
+public class OriginInfraApiConfiguration {
 }

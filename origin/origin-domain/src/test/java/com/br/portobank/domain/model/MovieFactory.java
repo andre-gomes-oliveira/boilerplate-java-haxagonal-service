@@ -1,8 +1,8 @@
 package com.br.portobank.domain.model;
 
-import com.br.portobank.domain.movies.model.Movie;
-import com.br.portobank.domain.movies.model.Person;
-import com.br.portobank.domain.movies.model.Rate;
+import com.br.portobank.domain.origin.model.Movie;
+import com.br.portobank.domain.origin.model.Person;
+import com.br.portobank.domain.origin.model.Rate;
 import lombok.experimental.UtilityClass;
 
 import java.time.LocalDate;

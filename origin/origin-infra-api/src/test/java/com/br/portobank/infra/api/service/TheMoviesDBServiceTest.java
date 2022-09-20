@@ -1,9 +1,9 @@
 package com.br.portobank.infra.api.service;
 
-import com.br.portobank.domain.movies.model.Movie;
+import com.br.portobank.domain.origin.model.Movie;
 import com.br.portobank.common.utils.DateTimeUtil;
-import com.br.portobank.domain.movies.outbound.MoviesProvider;
-import com.br.portobank.infra.api.model.MovieDBFactory;
+import com.br.portobank.domain.origin.outbound.OriginProvider;
+import com.br.portobank.infra.api.model.OriginDBFactory;
 import info.movito.themoviedbapi.TmdbMovies;
 import info.movito.themoviedbapi.model.MovieDb;
 import info.movito.themoviedbapi.model.core.MovieResultsPage;
@@ -27,7 +27,7 @@ class TheMoviesDBServiceTest {
     @Mock
     private TmdbMovies tmdbMovies;
 
-    private MoviesProvider moviesProvider;
+    private OriginProvider moviesProvider;
 
     @BeforeEach
     public void init() {
@@ -37,7 +37,7 @@ class TheMoviesDBServiceTest {
     @Test
     void should_get_popular() {
         // given
-        final MovieDb movieDb = MovieDBFactory.MOVIEDB_POJO;
+        final MovieDb movieDb = OriginDBFactory.MOVIEDB_POJO;
         final MovieResultsPage movieResultsPage = new MovieResultsPage();
         movieResultsPage.setResults(List.of(movieDb));
         when(tmdbMovies.getPopularMovies("en", 1))
@@ -53,7 +53,7 @@ class TheMoviesDBServiceTest {
     @Test
     void should_get_upcoming() {
         // given
-        final MovieDb movieDb = MovieDBFactory.MOVIEDB_POJO;
+        final MovieDb movieDb = OriginDBFactory.MOVIEDB_POJO;
         final MovieResultsPage movieResultsPage = new MovieResultsPage();
         movieResultsPage.setResults(List.of(movieDb));
         when(tmdbMovies.getUpcoming("en", 1, "FR"))
@@ -69,7 +69,7 @@ class TheMoviesDBServiceTest {
     @Test
     void should_get_by_id() {
         // given
-        final MovieDb movieDb = MovieDBFactory.MOVIEDB_POJO;
+        final MovieDb movieDb = OriginDBFactory.MOVIEDB_POJO;
         when(tmdbMovies.getMovie(movieDb.getId(),"en"))
                 .thenReturn(movieDb);
         // when

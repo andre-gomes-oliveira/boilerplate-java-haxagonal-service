@@ -1,12 +1,12 @@
-package com.br.portobank.domain.movies.outbound;
+package com.br.portobank.domain.origin.outbound;
 
-import com.br.portobank.domain.movies.model.Movie;
+import com.br.portobank.domain.origin.model.Movie;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
 
-public interface MoviesProvider {
+public interface OriginProvider {
     @NotNull
     List<Movie> getPopulars();
 

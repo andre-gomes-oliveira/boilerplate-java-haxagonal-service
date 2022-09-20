@@ -1,7 +1,7 @@
 package com.br.portobank.expose.api.integration;
 
 import com.br.portobank.DemoApplication;
-import com.br.portobank.domain.movies.model.Movie;
+import com.br.portobank.domain.origin.model.Movie;
 import info.movito.themoviedbapi.TmdbMovies;
 import info.movito.themoviedbapi.model.MovieDb;
 import info.movito.themoviedbapi.model.core.MovieResultsPage;

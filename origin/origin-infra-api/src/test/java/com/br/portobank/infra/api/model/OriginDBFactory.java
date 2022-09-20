@@ -5,7 +5,7 @@ import lombok.experimental.UtilityClass;
 
 
 @UtilityClass
-public class MovieDBFactory {
+public class OriginDBFactory {
 
     public static MovieDb MOVIEDB_POJO = new MovieDb();
 

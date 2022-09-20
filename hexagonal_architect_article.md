@@ -64,12 +64,12 @@ we’ll create a Maven project with `movies` as the root and 3 submodules like b
 
 ```
 movies
-├───movies-app
+├───origin-app
 ├───movies-domain
 └───movies-infra-api
 ```
 
-As you can see, we have one main module named `movies-app`, one Domain module named `movies-domain` and one infra module named `movies-infra-api`. Each infra represent a detail about infrastructure like database access and external APIcall.
+As you can see, we have one main module named `origin-app`, one Domain module named `movies-domain` and one infra module named `movies-infra-api`. Each infra represent a detail about infrastructure like database access and external APIcall.
 
 Since the Domain only contains classes with business rules, it cannot run alone. It requires some configuration and a main method or other technical details to run.
 
@@ -139,7 +139,7 @@ For dependency of all infra, we’ll have to import the Domain module with scope
 ...
 ```
 
-And for the application module `movies-app`, we’ll need to importe Domain and all other modules like below:
+And for the application module `origin-app`, we’ll need to importe Domain and all other modules like below:
 
 ```xml
 ...

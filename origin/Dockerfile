@@ -1,6 +1,6 @@
 FROM amazoncorretto:17-alpine-jdk
 
-ARG JAR_FILE=movies-app/target/*.jar
+ARG JAR_FILE=origin-app/target/*.jar
 
 COPY ${JAR_FILE} app.jar
 

@@ -26,11 +26,10 @@ import static org.mockito.Mockito.when;
 @SpringBootTest(classes = {DemoApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class MovieIntegrationTest {
 
-    @MockBean
-    private TmdbMovies tmdbMovies;
-
     @LocalServerPort
     int port;
+    @MockBean
+    private TmdbMovies tmdbMovies;
 
     @BeforeEach
     public void setUp() {

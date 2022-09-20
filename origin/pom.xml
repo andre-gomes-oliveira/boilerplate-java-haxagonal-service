@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>com.architecture.hexagonal.example</groupId>
-    <artifactId>movies</artifactId>
+    <artifactId>origin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>movies</name>
+    <name>origin</name>
 
     <description>Demo project for Hexagonal Architecture Exemple</description>
 
@@ -27,33 +27,33 @@
     </properties>
 
     <modules>
-        <module>movies-domain</module>
-        <module>movies-infra-api</module>
-        <module>movies-app</module>
-        <module>movies-common</module>
-        <module>movies-test-report</module>
+        <module>origin-domain</module>
+        <module>origin-infra-api</module>
+        <module>origin-app</module>
+        <module>origin-common</module>
+        <module>origin-test-report</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.architecture.hexagonal.example</groupId>
-                <artifactId>movies-domain</artifactId>
+                <artifactId>origin-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.architecture.hexagonal.example</groupId>
-                <artifactId>movies-infra-api</artifactId>
+                <artifactId>origin-infra-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.architecture.hexagonal.example</groupId>
-                <artifactId>movies-app</artifactId>
+                <artifactId>origin-app</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.architecture.hexagonal.example</groupId>
-                <artifactId>movies-common</artifactId>
+                <artifactId>origin-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

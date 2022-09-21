@@ -32,6 +32,7 @@
         <module>origin-app</module>
         <module>origin-common</module>
         <module>origin-test-report</module>
+        <module>origin-repository</module>
     </modules>
 
     <dependencyManagement>
